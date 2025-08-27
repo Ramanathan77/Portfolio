@@ -1,0 +1,216 @@
+/* Reset */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #fefefe;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background: #000;
+  color: #f4d35e;
+  padding: 15px 10%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #f4d35e;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.nav-links a:hover { color: #f4d35e; }
+.menu-toggle { display: none; cursor: pointer; font-size: 1.5rem; color: #f4d35e; }
+
+/* About */
+.about {
+  padding: 70px 10% 100px; /* top 70px, left/right 10%, bottom 100px */
+  background: #111;
+  display: flex;
+  justify-content: center;
+}
+
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+.about-text { flex: 1; }
+.about-text h2 { font-size: 2.2rem; margin-bottom: 15px; color: #f4d35e; }
+.about-text p { font-size: 1.1rem; }
+.about-photo img {
+  width: 260px;
+  border-radius: 50%;
+  border: 4px solid #f4d35e;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* Skills Section */
+.skills {
+  background-color: #111; /* black background */
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  color: #FFD700; /* yellow */
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background: #1a1a1a;
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+.skills-description {
+    margin: 0 auto 40px auto; /* space below text */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: center;
+    color: #fefefe;
+}
+
+/* Projects */
+.projects {
+  padding: 70px 10%;
+  background: #0d0d0d;
+}
+.projects h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #f4d35e;
+}
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+.card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s, border 0.3s;
+  text-decoration: none;
+  color: #fefefe;
+  display: block;
+}
+.card:hover { 
+  transform: translateY(-6px); 
+  border: 1px solid #f4d35e;
+}
+
+/* Contact */
+.contact {
+  padding: 70px 10%;
+  background: #111;
+  text-align: center;
+}
+.contact h2 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #f4d35e;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.contact-links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fefefe;
+  font-weight: bold;
+  background: #000;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 2px solid #f4d35e;
+  transition: 0.3s;
+}
+.contact-links a:hover {
+  background: #f4d35e;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: #f4d35e;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .nav-links { 
+    display: none; 
+    flex-direction: column; 
+    background: #000; 
+    position: absolute; 
+    top: 60px; 
+    right: 10%; 
+    padding: 15px;
+    border-radius: 8px;
+  }
+  .nav-links.show { display: flex; }
+  .menu-toggle { display: block; }
+}
