@@ -208,3 +208,7 @@ footer {
   .nav-links.show { display: flex; }
   .menu-toggle { display: block; }
 }
+html {
+  scroll-behavior: smooth;
+}
+
