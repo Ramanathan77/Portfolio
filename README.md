@@ -34,7 +34,7 @@ The design is clean, fully responsive, and optimized for different devices.
 ---
 
 ## 📂 Project Structure  
-```bash
+
 PROJECT-Portfolio/
 │── index.html
 │── style.css
