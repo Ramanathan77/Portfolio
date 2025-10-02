@@ -43,8 +43,9 @@ PROJECT-Portfolio/
 
 ---
 
-🔗 Live Demo
+## 🌐 Live Demo
 
-👉 View Portfolio
+Check out the live website hosted on **Github**:  
+[Visit My Portfolio]([https://ramanathan77.github.io/Portfolio/])
 
 ---
